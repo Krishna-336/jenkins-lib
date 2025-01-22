@@ -1,0 +1,6 @@
+@Library('jenkins-lib')_
+stage('Demo-shared-script') {
+    echo 'Hello world'
+    guvi 'Bala'
+    docker_push 'bala336/demo-app:${BUILD_NUMBER}'
+}
